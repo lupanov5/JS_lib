@@ -1,5 +1,11 @@
 import './lib/lib';
 
-$('button').attr('about', 'hhh', 'class');
+$('button').click(function() {
+    $('div').eq(0).toggleClass('active');
+});
 
-console.log($('button').attr('class'));
+$('div').click(function() {
+    console.log($(this).index());
+});
+
+console.log($('div').eq(0).find('.some'));
