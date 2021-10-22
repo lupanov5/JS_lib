@@ -580,17 +580,14 @@ _core__WEBPACK_IMPORTED_MODULE_0__["default"].prototype.click = function (handle
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _lib_lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib/lib */ "./src/js/lib/lib.js");
 
-$('button').click(function () {
-  $('div').eq(0).toggleClass('active');
+$('#first').on('click', () => {
+  $('div').eq(1).fadeOut(800);
 });
-$('div').click(function () {
-  console.log($(this).index());
-}); // console.log($('div').eq(2).find('.some'));
-// console.log($('.some').closest('.findmeq'));
-// console.log($('.findme').siblings());
-
-$('button').click(function () {
-  $('div').fadeIn(1800);
+$('[data-count="second"]').on('click', () => {
+  $('div').eq(2).fadeOut(800);
+});
+$('button').eq(2).on('click', () => {
+  $('.w-500').fadeOut(800);
 });
 
 /***/ })
