@@ -1,5 +1,5 @@
 import './lib/lib';
 
-$('button').click(function() {
-    $(this).toggleClass('active');
-});
+$('button').attr('about', 'hhh', 'class');
+
+console.log($('button').attr('class'));
