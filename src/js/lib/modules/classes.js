@@ -32,4 +32,3 @@ $.prototype.toggleClass = function(classNames) {
 
     return this;
 };
-
